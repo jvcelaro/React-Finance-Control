@@ -1,38 +1,204 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  background-color: rgb(226, 226, 226);
+
+}
+
+
 .App {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+header {
+  background-color: rgb(34, 148, 72);
+  color: white;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 15px rgb(46, 46, 46);
+
+}
+
+.title {
+  margin-bottom: 4rem;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin: -4rem 0rem 0rem 6rem;
+  width: 87%;
+}
+
+.entradas,
+.saidas,
+.total {
+  width: 350px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  box-shadow: 0px 8px 15px rgb(46, 46, 46);
+}
+
+.text_box {
+  font-size: 25px;
+  width: 150px;
+  margin: 25px;
+}
+
+.title_box {
+  font-size: 50px;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+span {
+  font-size: 25px;
+  margin: 25px;
+}
+
+.values {
+  background-color: white;
+  width: 85.2%;
+  height: 4rem;
+  margin: 20px 0px 0px 100px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 8px 15px rgb(46, 46, 46);
+}
+
+.opt_inputs {
+  width: 190px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.entrada,
+.saida {
+  margin: 0px 5px;
+}
+
+.p_values {
+  font-size: 18px;
+}
+
+button {
+  font-size: 15px;
+  color: white;
+  background-color: rgb(9, 117, 9);
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgb(46, 46, 46);
+}
+
+.limpar {
+  width: 100px;
+}
+
+.list {
+  background-color: rgb(255, 255, 255);
+  width: 85.2%;
+  margin: 20px 0px 0px 100px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 15px rgb(46, 46, 46);
+
+}
+
+table {
+  width: 95%;
+}
+
+tbody {
+  width: 100px;
+  width: 80%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.delitem {
+  height: 30px;
+  width: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+
+@media screen and (max-width: 720px) {
+
+  .App {
+    width: 78%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #root {
+    width: 130%;
   }
-  to {
-    transform: rotate(360deg);
+
+  header {
+    font-size: 13px;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin: -50px auto 0;
+  }
+
+  .entradas,
+  .saidas,
+  .total {
+    max-width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0px 8px 15px rgb(46, 46, 46);
+
+  }
+
+  .title_box {
+    font-size: 35px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .text_box {
+    width: 100px;
+  }
+
+  .values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    height: 300px;
+
+  }
+
+  .p_values {
+    text-align: left;
+  }
+
+  .list {
+    margin: 20px auto;
   }
 }
