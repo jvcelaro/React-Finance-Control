@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### `npm intall`
+
+YOU MUST BEFORE START THE PROJECT RUN THIS CODE FOR THE REACT INSTALL THE "node_modules" AND THE OTHER MISSING FILES
+
 ## Available Scripts
 
 In the project directory, you can run:
